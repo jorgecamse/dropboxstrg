@@ -1,0 +1,3 @@
+class CloudstrgList < ActiveRecord::Base
+  attr_accessible :plugin_name
+end
