@@ -15,3 +15,7 @@ gem "jquery-rails"
 
 # To use debugger
 # gem 'debugger'
+
+gem 'cloudstrg', :git => 'git://git.libresoft.es/git/Cloudstrg'
+
+
