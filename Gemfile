@@ -1,4 +1,5 @@
 source "http://rubygems.org"
+source "http://git.libresoft.es/"
 
 # Declare your gem's dependencies in dropboxstrg.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -15,7 +16,3 @@ gem "jquery-rails"
 
 # To use debugger
 # gem 'debugger'
-
-gem 'cloudstrg', :git => 'git://git.libresoft.es/git/Cloudstrg'
-
-
