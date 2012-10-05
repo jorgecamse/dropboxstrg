@@ -1,5 +1,4 @@
 source "http://rubygems.org"
-source "git://git.libresoft.es/git/Cloudstrg"
 
 # Declare your gem's dependencies in dropboxstrg.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
