@@ -1,0 +1,7 @@
+require 'cloudstrg/engine'
+
+module Dropboxstrg
+  class Engine < ::Rails::Engine
+    isolate_namespace Dropboxstrg
+  end
+end

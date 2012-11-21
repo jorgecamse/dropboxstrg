@@ -1,0 +1,23 @@
+module Dropboxstrg
+  class Param < ActiveRecord::Base
+
+    attr_accessible :akey, :asecret
+
+    attr_accessor :user_email
+    belongs_to :user, :class_name => Dropboxstrg.user_class
+    
+    before_save :set_user
+
+    private
+      def set_user
+        if self.user_id
+          self.user = Dropboxstrg.user_class.constantize.find(self.user_id)
+        else
+          self.user = Dropboxstrg.user_class.constantize.find_by_email(user_email)
+        end
+        if not self.user
+          return false
+        end
+      end
+  end
+end
