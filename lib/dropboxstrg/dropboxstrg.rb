@@ -54,6 +54,7 @@ class DropboxStrg < CloudStrg::CloudStorage
       else
         session[:dropbox_rkey] = @session.request_token.key
         session[:dropbox_rsecret] = @session.request_token.secret
+        session[:plugin_name] = self.class.to_s.split('Strg')[0].downcase
         return session, @session.get_authorize_url(callback=@redirect_path)
       end
     end
